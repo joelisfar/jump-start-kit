@@ -1,0 +1,24 @@
+.container {
+    margin: 0 auto;
+    min-width: 272px;
+    width: col(12);
+    &--standard {
+        @include w700 {
+            width: col(11);
+        }
+        @include w1280 {
+            width: col(10);
+        }
+    }
+    &--medium {
+        @include w700 {
+            width: col(8);
+        }
+        @include w1000 {
+            width: col(7);
+        }
+        @include w1280 {
+            width: col(6);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Point sizing
+$base: 16;
+@function em($pixels, $context: $base) {
+	@return #{$pixels/$context}em;
+}
+
+@function rem($pixels, $context: $base) {
+	@return #{$pixels/$context}rem;
+}
+
+// Linear Interpolation
+@function linearInterp($x0, $y0, $x1, $y1) {
+	$slope: ($y1 - $y0)/($x1 - $x0);
+	$intercept: $y0 - $slope * $x0;
+	@return calc(#{$slope*100}vw + #{rem($intercept)});
+}

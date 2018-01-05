@@ -1,0 +1,55 @@
+body {
+	line-height: $line-height-default;
+	font-family: $body;
+	font-weight: $regular;
+	color: $black;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color: currentColor;
+}
+
+// Headings
+h1, .set-h1 {
+	@include h1-set;
+	&:not(:last-child) {
+		margin-bottom: 2.25rem;
+	}
+}
+
+h2, .set-h2 {
+	@include h2-set;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+h3, .set-h3 {
+	@include h3-set;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+h4, .set-h4 {
+	@include h4-set;
+	&:not(:last-child) {
+		margin: 1.75rem 0 1rem;
+	}
+}
+
+h5, .set-h5 {
+	@include h5-set;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+h6, .set-h6 {
+	@include h6-set;
+	&:not(:last-child) {
+		margin-bottom: 0.5rem;
+	}
+}

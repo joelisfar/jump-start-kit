@@ -1,0 +1,49 @@
+// COL (function-based column-sizing)
+// --------------------------------------
+$col-width: 96;
+$gutter-width: 24;
+$column: (($col-width+$gutter-width)/1440)*100vw;
+$column-match: $col-width/$base*1rem;
+$gutter: $gutter-width/$base*1rem;
+
+// Functions
+// ---------
+@function col($col, $subtract_gutter: false) {
+    @if $subtract_gutter != false {
+        @return calc((#{$column} * #{$col} ) - #{2 * $gutter});
+    }
+    @else {
+        @return calc((#{$column} * #{$col} ) - #{$gutter});
+    }
+}
+
+@function match($unit) {
+    @return (($column-match + $gutter) * $unit ) - $gutter;
+}
+
+// Column-markers
+// --------------
+.col-markers {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1000;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        li {
+            width: col(1);
+            background-color: rgba($gray, 0.25);
+            height: 100vh;
+            &:not(:last-child) {
+                margin-right: $gutter;
+            }
+        }
+    }
+    &:not(:target) { // Only show when #markers is targeted
+        display: none;
+    }
+}

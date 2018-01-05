@@ -1,0 +1,64 @@
+// Media queries
+@mixin n480  		{ @media (max-width: 479px)	{ @content; } }
+@mixin w480  		{ @media (min-width: 480px)	{ @content; } }
+@mixin w480-n700 	{ @media (min-width: 480px) and (max-width: 699px) { @content; } }
+@mixin n700 	 	{ @media (max-width: 699px)	{ @content; } }
+@mixin w700  		{ @media (min-width: 700px)	{ @content; } }
+@mixin w700-n1000 	{ @media (min-width: 700px) and (max-width: 999px) { @content; } }
+@mixin n1000 		{ @media (max-width: 999px)	{ @content; } }
+@mixin w1000 		{ @media (min-width: 1000px) { @content; } }
+@mixin w1000-n1280 	{ @media (min-width: 1000px) and (max-width: 1279px) { @content; } }
+@mixin n1280 		{ @media (max-width: 1279px) { @content; } }
+@mixin w1280 		{ @media (min-width: 1280px) { @content; } }
+@mixin w1280-n1440 	{ @media (min-width: 1280px) and (max-width: 1439px) { @content; } }
+@mixin n1440 		{ @media (max-width: 1439px) { @content; } }
+@mixin w1440 		{ @media (min-width: 1440px) { @content; } }
+@mixin w1440-n1920 	{ @media (min-width: 1440px) and (max-width: 1919px) { @content; } }
+@mixin n1920 		{ @media (max-width: 1919px) { @content; } }
+@mixin w1920 		{ @media (min-width: 1920px) { @content; } }
+
+// Typesets
+@mixin h1-set {
+	font-size: 4em;
+	line-height: 1;
+	font-weight: $light;
+	color: $purple;
+	letter-spacing: rem(-1);
+}
+
+@mixin h2-set {
+	font-size: 2.5em;
+	line-height: 1.25;
+	font-weight: $bold;
+	color: $purple;
+}
+
+@mixin h3-set {
+	font-size: 1.75em;
+	line-height: 1.25;
+	font-weight: $medium;
+	color: $purple;
+}
+
+@mixin h4-set {
+	font-size: rem(21);
+	line-height: 1.25;
+	font-weight: $medium;
+	color: $gray;
+	text-transform: uppercase;
+	letter-spacing: rem(1);
+}
+
+@mixin h5-set {
+	font-size: 1.5em;
+	line-height: 1.25;
+	font-weight: $medium;
+	color: $purple;
+}
+
+@mixin h6-set {
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: $heavy;
+	color: $gray;
+}

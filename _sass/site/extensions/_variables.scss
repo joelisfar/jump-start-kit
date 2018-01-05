@@ -1,0 +1,23 @@
+// Color palette
+$white: #FFFFFF;
+$black: #000000;
+$gray: #647382;
+$gray-light: #D3D8DC;
+$purple: #663399;
+
+// Body font
+$body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$light: 300;    // (allows normal and italic)
+$regular: 400;  // (allows normal and italic)
+$medium: 500;   // (allows normal and italic)
+$bold: 700;     // (allows normal and italic)
+$heavy: 900;    // (allows normal and italic)
+
+// Duration and timing
+$timing-default: 0.25s ease-out;
+
+// Border radius
+$radius-default: 0.25em;
+
+// Line height
+$line-height-default: 1.625;

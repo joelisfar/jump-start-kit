@@ -1,0 +1,28 @@
+select, input, textarea {
+	// appearance: none;
+	font-family: $body;
+	margin: 0 0 em(25);
+	font-size: em(16);
+	display: block;
+	color: currentColor;
+	border: rem(1.5) solid $gray-light;
+	line-height: $line-height-default;
+	width: 100%;
+	padding: 0.75em 0.75em em(11);
+	border-radius: $radius-default;
+
+	&::placeholder {
+		color: $gray;
+	}
+}
+
+label {
+	display: block;
+	color: $gray;
+	margin-bottom: 0.25em;
+	font-weight: $medium;
+	cursor: pointer;
+	&::selection {
+		background-color: transparent; // prevent accidental text selection
+	}
+}

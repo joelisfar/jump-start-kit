@@ -1,0 +1,56 @@
+.formatted-type {
+	// Links
+	a:not(.button) {
+		color: $purple;
+		display: inline;
+		font-weight: $medium;
+		text-decoration: underline;
+		&:hover {
+			color: $gray;
+		}
+	}
+
+	// Margins
+	p, ul, .button {
+		&:not(:last-child) {
+			margin-bottom: 1.25em;
+		}
+	}
+	img {
+		margin-bottom: 1.75em;
+	}
+
+	// Lists
+	ul, ol {
+		margin-left: 1.25em;
+		li {
+			margin-bottom: em(6);
+		}
+	}
+	ul {
+		list-style-type: circle;
+	}
+	ol {
+		list-style-type: decimal;
+	}
+
+	// Other type features
+	strong {
+		font-weight: $bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	small {
+		font-size: em(14);
+	}
+
+	hr {
+		border: none;
+		height: em(1.5);
+		background-color: $gray-light;
+		margin: 2em 0;
+	}
+}

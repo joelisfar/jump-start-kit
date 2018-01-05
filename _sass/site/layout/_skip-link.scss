@@ -1,0 +1,20 @@
+.skip-link {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 1.5em;
+    opacity: 1;
+    pointer-events: none;
+
+    .button {
+        transition: transform $timing-default, opacity $timing-default;
+        &:not(:focus):not(:hover) {
+            transform: translateY(-5em);
+            opacity: 0.5;
+            pointer-events: auto;
+        }
+    }
+}

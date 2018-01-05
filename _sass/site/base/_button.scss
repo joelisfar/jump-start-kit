@@ -1,0 +1,30 @@
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	transition: background-color $timing-default;
+}
+.button {
+	margin: 0;
+	display: inline-block;
+	cursor: pointer;
+	@include h4-set;
+	font-size: 1em;
+
+	color: $white;
+	background-color: $gray;
+	padding: 1rem 2rem;
+
+	text-align: center;
+	border-radius: $radius-default;
+
+	transition:
+		color $timing-default,
+		background-color $timing-default;
+	&:hover, &:focus {
+		background-color: $purple;
+	}
+	&--large {
+		font-size: 1.25em;
+	}
+}
