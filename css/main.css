@@ -265,15 +265,17 @@ button {
   background-color: #D3D8DC;
   padding: 2em 0; }
   .site-header .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (min-width: 700px) {
+      .site-header .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
     .site-header .row .logo {
       font-size: 1.5em;
       font-weight: 700;
@@ -293,19 +295,23 @@ button {
 .site-footer {
   background-color: #D3D8DC;
   padding: 2.5em 0; }
-  .site-footer .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .site-footer .row p a {
-      display: inline;
-      color: #4e5a65;
-      font-weight: 500; }
-      .site-footer .row p a:hover {
-        color: #663399; }
+  @media (min-width: 700px) {
+    .site-footer .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  .site-footer .row .logo {
+    font-weight: 500;
+    color: #663399; }
+  .site-footer .row p a {
+    display: inline;
+    color: #4e5a65;
+    font-weight: 500; }
+    .site-footer .row p a:hover {
+      color: #663399; }
 
 .skip-link {
   display: -webkit-box;

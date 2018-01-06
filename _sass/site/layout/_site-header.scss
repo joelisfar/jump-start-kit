@@ -2,8 +2,10 @@
     background-color: $gray-light;
     padding: 2em 0;
     .row {
-        display: flex;
-        justify-content: space-between;
+        @include w700 {
+            display: flex;
+            justify-content: space-between;
+        }
         align-items: center;
         .logo {
             font-size: 1.5em;
