@@ -1,7 +1,7 @@
 .container {
     margin: 0 auto;
-    min-width: 272px;
     width: col(12);
+    min-width: rem(296);
     &--standard {
         @include w700 {
             width: col(11);

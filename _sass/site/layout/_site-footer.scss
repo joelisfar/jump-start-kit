@@ -7,8 +7,11 @@
             justify-content: space-between;
         }
         .logo {
-            font-weight: $medium;
+            font-weight: $bold;
             color: $purple;
+            &:hover {
+                color: $gray;
+            }
         }
         p {
             a {

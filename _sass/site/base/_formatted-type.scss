@@ -10,8 +10,15 @@
 		}
 	}
 
+	// Sizing
+	p, ul, ol, {
+		@include w700 {
+			font-size: em(17);
+		}
+	}
+
 	// Margins
-	p, ul, .button {
+	p, ul, ol, .button {
 		&:not(:last-child) {
 			margin-bottom: 1.25em;
 		}
