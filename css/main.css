@@ -86,70 +86,64 @@ a {
   transition: color 0.25s ease-out; }
 
 h1, .set-h1 {
-  line-height: 1;
   font-weight: 300;
   color: #663399;
   letter-spacing: -0.0625rem;
-  font-size: 3.5em; }
+  line-height: 1;
+  font-size: 3.5em;
+  margin-bottom: 2.25rem; }
   @media (min-width: 700px) {
     h1, .set-h1 {
       font-size: 4em; } }
-  h1:not(:last-child), .set-h1:not(:last-child) {
-    margin-bottom: 2.25rem; }
 
 h2, .set-h2 {
-  line-height: 1.25;
   font-weight: 700;
   color: #663399;
-  font-size: 2em; }
+  line-height: 1.25;
+  font-size: 2em;
+  margin-bottom: 1rem; }
   @media (min-width: 700px) {
     h2, .set-h2 {
       font-size: 2.5em; } }
-  h2:not(:last-child), .set-h2:not(:last-child) {
-    margin-bottom: 1rem; }
 
 h3, .set-h3 {
-  line-height: 1.25;
   font-weight: 500;
   color: #663399;
-  font-size: 1.5em; }
+  line-height: 1.25;
+  font-size: 1.5em;
+  margin-bottom: 1rem; }
   @media (min-width: 700px) {
     h3, .set-h3 {
       font-size: 1.75em; } }
-  h3:not(:last-child), .set-h3:not(:last-child) {
-    margin-bottom: 1rem; }
 
 h4, .set-h4 {
-  line-height: 1.25;
   font-weight: 500;
   color: #647382;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
-  font-size: 1.125rem; }
+  line-height: 1.25;
+  font-size: 1.125rem;
+  margin: 1.75rem 0 1rem; }
   @media (min-width: 700px) {
     h4, .set-h4 {
       font-size: 1.3125rem; } }
-  h4:not(:last-child), .set-h4:not(:last-child) {
-    margin: 1.75rem 0 1rem; }
 
 h5, .set-h5 {
+  font-size: 1.5em;
   line-height: 1.25;
   font-weight: 500;
   color: #663399;
-  font-size: 1.5em; }
-  h5:not(:last-child), .set-h5:not(:last-child) {
-    margin-bottom: 1rem; }
+  margin-bottom: 0.75rem; }
 
 h6, .set-h6 {
-  line-height: 1.25;
   font-weight: 900;
   color: #647382;
-  font-size: 1em; }
+  line-height: 1.25;
+  font-size: 1em;
+  margin-bottom: 1.5rem; }
   @media (min-width: 700px) {
     h6, .set-h6 {
       font-size: 1.0625em; } }
-  h6:not(:last-child), .set-h6:not(:last-child) {
-    margin-bottom: 0.5rem; }
 
 .formatted-type a:not(.button) {
   color: #663399;
@@ -195,42 +189,6 @@ h6, .set-h6 {
   background-color: #D3D8DC;
   margin: 2em 0; }
 
-img, svg {
-  display: block;
-  height: auto;
-  max-width: 100%; }
-
-select, input, textarea {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0 0 1.5625em;
-  font-size: 1em;
-  display: block;
-  color: currentColor;
-  border: 0.09375rem solid #D3D8DC;
-  line-height: 1.625;
-  width: 100%;
-  padding: 0.75em 0.75em 0.6875em;
-  border-radius: 0.25em; }
-  select::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #647382; }
-  select:-ms-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    color: #647382; }
-  select::-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-    color: #647382; }
-  select::placeholder, input::placeholder, textarea::placeholder {
-    color: #647382; }
-
-label {
-  display: block;
-  color: #647382;
-  margin-bottom: 0.25em;
-  font-weight: 500;
-  cursor: pointer; }
-  label::-moz-selection {
-    background-color: transparent; }
-  label::selection {
-    background-color: transparent; }
-
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -243,27 +201,77 @@ button {
   margin: 0;
   display: inline-block;
   cursor: pointer;
+  padding: 1rem 2rem;
   line-height: 1.25;
   font-weight: 500;
-  color: #647382;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
-  font-size: 1.125rem;
-  font-size: 1em;
-  color: #FFFFFF;
-  background-color: #647382;
-  padding: 1rem 2rem;
+  font-size: 1.125em;
   text-align: center;
   border-radius: 0.25em;
+  color: #FFFFFF;
+  background-color: #647382;
   -webkit-transition: color 0.25s ease-out, background-color 0.25s ease-out;
   transition: color 0.25s ease-out, background-color 0.25s ease-out; }
-  @media (min-width: 700px) {
-    .button {
-      font-size: 1.3125rem; } }
   .button:hover, .button:focus {
     background-color: #663399; }
   .button--large {
     font-size: 1.25em; }
+
+label {
+  display: block;
+  color: #647382;
+  margin-bottom: 0.25em;
+  font-weight: 500;
+  cursor: pointer; }
+  label::-moz-selection {
+    background-color: transparent; }
+  label::selection {
+    background-color: transparent; }
+
+select, input, textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 1.5625em;
+  border: 0.09375rem solid #D3D8DC;
+  border-radius: 0.25em;
+  padding: 0.75em 0.75em 0.6875em;
+  font-size: 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.625;
+  color: currentColor; }
+  select::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: rgba(100, 115, 130, 0.75); }
+  select:-ms-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: rgba(100, 115, 130, 0.75); }
+  select::-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: rgba(100, 115, 130, 0.75); }
+  select::placeholder, input::placeholder, textarea::placeholder {
+    color: rgba(100, 115, 130, 0.75); }
+
+.styled-select {
+  color: #647382;
+  position: relative; }
+  .styled-select option {
+    color: red; }
+  .styled-select::after {
+    content: "";
+    position: absolute;
+    top: 1.4375em;
+    right: 1.25em;
+    pointer-events: none;
+    border-left: 0.4375em solid transparent;
+    border-right: 0.4375em solid transparent;
+    border-top: 0.5em solid rgba(100, 115, 130, 0.75); }
+
+img, svg {
+  display: block;
+  height: auto;
+  max-width: 100%; }
 
 .container {
   margin: 0 auto;

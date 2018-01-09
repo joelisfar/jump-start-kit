@@ -8,16 +8,17 @@ button {
 	margin: 0;
 	display: inline-block;
 	cursor: pointer;
-	@include h4-set;
-	font-size: 1em;
-
-	color: $white;
-	background-color: $gray;
 	padding: 1rem 2rem;
-
+	line-height: 1.25;
+	font-weight: $medium;
+	text-transform: uppercase;
+	letter-spacing: rem(1);
+	font-size: em(18);
 	text-align: center;
 	border-radius: $radius-default;
 
+	color: $white;
+	background-color: $gray;
 	transition:
 		color $timing-default,
 		background-color $timing-default;

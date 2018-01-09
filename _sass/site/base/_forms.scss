@@ -1,0 +1,46 @@
+label {
+	display: block;
+	color: $gray;
+	margin-bottom: 0.25em;
+	font-weight: $medium;
+	cursor: pointer;
+	&::selection {
+		background-color: transparent; // prevent accidental text selection
+	}
+}
+
+select, input, textarea {
+	appearance: none;
+	display: block;
+	width: 100%;
+	margin: 0 0 em(25);
+	border: rem(1.5) solid $gray-light;
+	border-radius: $radius-default;
+	padding: 0.75em 0.75em em(11);
+	font-size: em(16);
+	font-family: $body;
+	font-weight: $medium;
+	line-height: $line-height-default;
+	color: currentColor;
+	&::placeholder {
+		color: rgba($gray, 0.75);
+	}
+}
+
+.styled-select {
+	color: $gray;
+	position: relative;
+	option {
+		color: red;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: em(23);
+		right: em(20);
+		pointer-events: none;
+		border-left: em(7) solid transparent;
+		border-right: em(7) solid transparent;
+		border-top: em(8) solid rgba($gray, 0.75);
+	}
+}
