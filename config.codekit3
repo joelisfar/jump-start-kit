@@ -7,7 +7,7 @@
 		"uuidString": "07A8BE31-75C3-4AEE-9B63-94498359EE4A"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26330",
 "files": {
 	"\/.gitattributes": {
 		"cB": 0,
@@ -255,7 +255,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_sass\/site\/layout\/_main-set.scss": {
+	"\/_sass\/site\/layout\/_content-set.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -263,7 +263,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/_sass\/site\/layout\/_main-set.css",
+		"oAP": "\/_sass\/site\/layout\/_content-set.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -366,6 +366,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -929,6 +930,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
