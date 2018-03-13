@@ -252,6 +252,8 @@ select, input, textarea {
     color: rgba(100, 115, 130, 0.75); }
   select::placeholder, input::placeholder, textarea::placeholder {
     color: rgba(100, 115, 130, 0.75); }
+  select::-ms-expand, input::-ms-expand, textarea::-ms-expand {
+    display: none; }
 
 .styled-select {
   color: #647382;

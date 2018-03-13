@@ -25,6 +25,10 @@ select, input, textarea {
 	&::placeholder {
 		color: rgba($gray, 0.75);
 	}
+	//Hide Native Select Arrow on IE10+
+	&::-ms-expand {
+		display: none;
+	}
 }
 
 .styled-select {
