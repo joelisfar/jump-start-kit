@@ -10,14 +10,14 @@ var messages = {
 
 
 /**
- * Rebuild Jekyll & do page reload
+ * Do page reload
  */
 gulp.task('reload', function () {
     browserSync.reload();
 });
 
 /**
- * Wait for jekyll-build, then launch the Server
+ * Wait for the scss to compile, then launch the Server
  */
 gulp.task('browser-sync', ['sass', 'reload'], function() {
     browserSync.init({
@@ -28,7 +28,7 @@ gulp.task('browser-sync', ['sass', 'reload'], function() {
 });
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ * Compile scss files
  */
 gulp.task('sass', function () {
     browserSync.notify(messages.compileScss);
