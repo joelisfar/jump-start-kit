@@ -324,6 +324,16 @@
 		"oAP": "\/css\/main.css.map",
 		"oF": 0
 		},
+	"\/gulpfile.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/gulpfile-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
