@@ -13,12 +13,15 @@
     &--medium {
         @include w700 {
             width: col(8);
+            max-width: match(8);
         }
         @include w1000 {
             width: col(7);
+            max-width: match(7);
         }
         @include w1280 {
             width: col(6);
+            max-width: match(7);
         }
     }
 }

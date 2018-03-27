@@ -285,13 +285,16 @@ img, svg {
       width: calc((8.3333333333vw * 10 ) - 1.5rem); } }
   @media (min-width: 700px) {
     .container--medium {
-      width: calc((8.3333333333vw * 8 ) - 1.5rem); } }
+      width: calc((8.3333333333vw * 8 ) - 1.5rem);
+      max-width: 58.5rem; } }
   @media (min-width: 1000px) {
     .container--medium {
-      width: calc((8.3333333333vw * 7 ) - 1.5rem); } }
+      width: calc((8.3333333333vw * 7 ) - 1.5rem);
+      max-width: 51rem; } }
   @media (min-width: 1280px) {
     .container--medium {
-      width: calc((8.3333333333vw * 6 ) - 1.5rem); } }
+      width: calc((8.3333333333vw * 6 ) - 1.5rem);
+      max-width: 51rem; } }
 
 .site-header {
   background-color: #D3D8DC;
