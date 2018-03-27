@@ -1,13 +1,16 @@
 .container {
     margin: 0 auto;
     width: col(12);
+    max-width: match(12);
     min-width: rem(296);
     &--standard {
         @include w700 {
             width: col(11);
+            max-width: match(11);
         }
         @include w1280 {
             width: col(10);
+            max-width: match(10);
         }
     }
     &--medium {
@@ -21,7 +24,7 @@
         }
         @include w1280 {
             width: col(6);
-            max-width: match(7);
+            max-width: match(6);
         }
     }
 }
