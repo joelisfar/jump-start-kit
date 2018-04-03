@@ -390,7 +390,17 @@ img, svg {
       pointer-events: auto; }
 
 .content-set {
-  padding: 3em 0; }
+  padding: 2.5em 0; }
+  @media (min-width: 1000px) {
+    .content-set {
+      padding: 4em 0; } }
+  .content-set:nth-of-type(even) {
+    background-color: #f4eef9; }
+  .content-set > section:not(:last-child), .content-set .container > section:not(:last-child) {
+    margin-bottom: 2.5em; }
+    @media (min-width: 1000px) {
+      .content-set > section:not(:last-child), .content-set .container > section:not(:last-child) {
+        margin-bottom: 4em; } }
 
 .hero--home {
   padding: 5em 0 4.5em;
