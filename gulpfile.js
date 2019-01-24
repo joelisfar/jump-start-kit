@@ -1,26 +1,30 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
-var prefix      = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-
-var messages = {
+const gulp = require('gulp');
+browserSync = require('browser-sync');
+sass = require('gulp-sass');
+prefix = require('gulp-autoprefixer');
+sourcemaps = require('gulp-sourcemaps');
+plumber = require('gulp-plumber');
+notify = require('gulp-notify');
+babel = require('gulp-babel');
+messages = {
     compileScss: '<span style="color: grey">Compiling:</span> Sass'
 };
-
+mainScss = '_sass/main.scss';
+cssDestination = 'css/';
 
 /**
  * Do page reload
  */
-gulp.task('reload', function () {
+gulp.task('reload', (done) => {
     browserSync.reload();
+    done();
 });
 
 /**
  * Wait for the scss to compile, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'reload'], function() {
-    browserSync.init({
+gulp.task('browser-sync', function() {
+    return browserSync.init({
         server: {
             baseDir: './'
         }
@@ -32,19 +36,17 @@ gulp.task('browser-sync', ['sass', 'reload'], function() {
  */
 gulp.task('sass', function () {
     browserSync.notify(messages.compileScss);
-    return gulp.src('_sass/main.scss')
+    return gulp.src(mainScss)
+        .pipe(plumber({
+            errorHandler: notify.onError("Error: <%= error.message %>")
+        }))
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['sass']
         }))
-        .on('error', function(err) {
-            console.error(err.message);
-            browserSync.notify(err.message, 3000); // Display error in the browser
-            this.emit('end'); // Prevent gulp from catching the error and exiting the watch process
-        })
         .pipe(prefix(['last 5 versions', '> 1%'], { cascade: true }))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest(cssDestination))
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
@@ -52,13 +54,19 @@ gulp.task('sass', function () {
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
-gulp.task('watch', function () {
-    gulp.watch('_sass/**/*.scss', ['sass']);
-    gulp.watch(['*/**/*.html', 'js/*.js', 'index.html'], ['reload']);
+gulp.task('watch', (done) => {
+    gulp.watch('_sass/**/*.scss', gulp.series('sass'));
+    gulp.watch(['*/**/*.html'], gulp.series('reload'));
+    done();
 });
+
+/**
+ * Build Task
+ */
+gulp.task('build', gulp.series('sass'));
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', gulp.series('build', 'watch', 'browser-sync'));
