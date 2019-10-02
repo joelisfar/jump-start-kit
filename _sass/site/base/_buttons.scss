@@ -19,6 +19,9 @@ button {
 
 	color: $white;
 	background-color: $gray;
+	@media (prefers-color-scheme: dark) {
+		background-color: $gray-dark-1;
+	}
 	transition:
 		color $timing-default,
 		background-color $timing-default;

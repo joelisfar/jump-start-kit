@@ -3,6 +3,9 @@ $white: #FFFFFF;
 $black: #000000;
 $gray: #647382;
 $gray-light: #D3D8DC;
+$gray-dark-1: darken($gray, 15%);
+$gray-dark-2: darken($gray, 37.5%);
+$gray-dark-3: darken($gray, 41%);
 $purple: #663399;
 
 // Body font

@@ -1,6 +1,9 @@
 .site-footer {
     background-color: $gray-light;
     padding: 2.5em 0;
+    @media (prefers-color-scheme: dark) {
+        background-color: $gray-dark-2;
+    }
     .row {
         @include w700 {
             display: flex;
@@ -16,8 +19,11 @@
         p {
             a {
                 display: inline;
-                color: darken($gray, 10%);
                 font-weight: $medium;
+                color: darken($gray, 15%);
+                @media (prefers-color-scheme: dark) {
+                    color: $gray;
+                }
                 &:hover {
                     color: $purple;
                 }
