@@ -239,6 +239,7 @@ select, input, textarea {
   display: block;
   width: 100%;
   margin: 0 0 1.5625em;
+  background-color: #FFFFFF;
   border: 0.09375rem solid #D3D8DC;
   border-radius: 0.25em;
   padding: 0.75em 0.75em 0.6875em;
@@ -261,8 +262,6 @@ select, input, textarea {
 .styled-select {
   color: #647382;
   position: relative; }
-  .styled-select option {
-    color: red; }
   .styled-select::after {
     content: "";
     position: absolute;
