@@ -22,7 +22,7 @@ select, input, textarea {
 	font-weight: $medium;
 	line-height: $line-height-default;
 	color: currentColor;
-
+	background-color: $white;
     @media (prefers-color-scheme: dark) {
 		background-color: $gray-dark-2;
 		border-color: $gray;
@@ -40,9 +40,6 @@ select, input, textarea {
 .styled-select {
 	color: $gray;
 	position: relative;
-	option {
-		color: red;
-	}
 	&::after {
 		content: "";
 		position: absolute;
