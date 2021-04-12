@@ -18,7 +18,7 @@
         display: inline;
         color: darken($gray, 10%);
         font-weight: $medium;
-        &:hover {
+        &:hover, &:focus {
           color: $purple;
         }
       }

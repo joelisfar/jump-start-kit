@@ -11,7 +11,7 @@
       font-size: 1.5em;
       font-weight: $bold;
       color: $purple;
-      &:hover {
+      &:hover, &:focus {
         color: $gray;
       }
     }
@@ -28,7 +28,7 @@
           a {
             font-weight: $medium;
             color: darken($gray, 10%);
-            &:hover {
+            &:hover, &:focus {
               color: $purple;
             }
           }
