@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,22 +86,35 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -64,7 +145,7 @@ body {
             justify-content: center;
     margin: 0 auto; }
     .col-markers ul li {
-      width: calc((8.33333vw * 1 ) - 1.5rem);
+      width: calc((8.33333vw * 1) - 1.5rem);
       background-color: rgba(100, 115, 130, 0.25);
       height: 100vh; }
       .col-markers ul li:not(:last-child) {
@@ -187,7 +268,7 @@ h6, .set-h6 {
 .formatted-type hr {
   border: none;
   height: 0.09375em;
-  background-color: #D3D8DC;
+  background-color: #d3d8dc;
   margin: 2em 0; }
 
 button {
@@ -211,7 +292,7 @@ button {
   font-size: 1.125em;
   text-align: center;
   border-radius: 0.25em;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #647382;
   -webkit-transition: color 0.25s ease-out, background-color 0.25s ease-out;
   -o-transition: color 0.25s ease-out, background-color 0.25s ease-out;
@@ -239,8 +320,8 @@ select, input, textarea {
   display: block;
   width: 100%;
   margin: 0 0 1.5625em;
-  background-color: #FFFFFF;
-  border: 0.09375rem solid #D3D8DC;
+  background-color: #ffffff;
+  border: 0.09375rem solid #d3d8dc;
   border-radius: 0.25em;
   padding: 0.75em 0.75em 0.6875em;
   font-size: 1em;
@@ -281,32 +362,32 @@ img, svg {
 
 .container {
   margin: 0 auto;
-  width: calc((8.33333vw * 12 ) - 1.5rem);
+  width: calc((8.33333vw * 12) - 1.5rem);
   max-width: 88.5rem;
   min-width: 18.5rem; }
   @media (min-width: 700px) {
     .container--standard {
-      width: calc((8.33333vw * 11 ) - 1.5rem);
+      width: calc((8.33333vw * 11) - 1.5rem);
       max-width: 81rem; } }
   @media (min-width: 1280px) {
     .container--standard {
-      width: calc((8.33333vw * 10 ) - 1.5rem);
+      width: calc((8.33333vw * 10) - 1.5rem);
       max-width: 73.5rem; } }
   @media (min-width: 700px) {
     .container--medium {
-      width: calc((8.33333vw * 8 ) - 1.5rem);
+      width: calc((8.33333vw * 8) - 1.5rem);
       max-width: 58.5rem; } }
   @media (min-width: 1000px) {
     .container--medium {
-      width: calc((8.33333vw * 7 ) - 1.5rem);
+      width: calc((8.33333vw * 7) - 1.5rem);
       max-width: 51rem; } }
   @media (min-width: 1280px) {
     .container--medium {
-      width: calc((8.33333vw * 6 ) - 1.5rem);
+      width: calc((8.33333vw * 6) - 1.5rem);
       max-width: 43.5rem; } }
 
 .site-header {
-  background-color: #D3D8DC;
+  background-color: #d3d8dc;
   padding: 2em 0; }
   .site-header .row {
     -webkit-box-align: center;
@@ -342,7 +423,7 @@ img, svg {
           color: #663399; }
 
 .site-footer {
-  background-color: #D3D8DC;
+  background-color: #d3d8dc;
   padding: 2.5em 0; }
   @media (min-width: 700px) {
     .site-footer .row {
@@ -377,18 +458,12 @@ img, svg {
   top: 1.5em;
   opacity: 1;
   pointer-events: none; }
-  .skip-link .button {
-    -webkit-transition: opacity 0.25s ease-out, -webkit-transform 0.25s ease-out;
-    transition: opacity 0.25s ease-out, -webkit-transform 0.25s ease-out;
-    -o-transition: transform 0.25s ease-out, opacity 0.25s ease-out;
-    transition: transform 0.25s ease-out, opacity 0.25s ease-out;
-    transition: transform 0.25s ease-out, opacity 0.25s ease-out, -webkit-transform 0.25s ease-out; }
-    .skip-link .button:not(:focus):not(:hover) {
-      -webkit-transform: translateY(-5em);
-          -ms-transform: translateY(-5em);
-              transform: translateY(-5em);
-      opacity: 0.5;
-      pointer-events: auto; }
+  .skip-link .button:not(:focus):not(:hover) {
+    -webkit-transform: translateY(-5em);
+        -ms-transform: translateY(-5em);
+            transform: translateY(-5em);
+    opacity: 0.5;
+    pointer-events: auto; }
 
 .content-set {
   padding: 2.5em 0; }
@@ -410,7 +485,7 @@ img, svg {
   .hero--home h1 {
     color: #8c53c6; }
   .hero--home .set-h4 {
-    color: #D3D8DC; }
+    color: #d3d8dc; }
   .hero--home .button {
     margin-top: 4rem; }
 

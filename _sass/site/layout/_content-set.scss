@@ -1,21 +1,21 @@
 .content-set {
-    padding: 2.5em 0;
-    @include w1000 {
-        padding: 4em 0;
-    }
+  padding: 2.5em 0;
+  @include w1000 {
+    padding: 4em 0;
+  }
 
-    // Add shading to every other `.content-set`
-    &:nth-of-type(even) {
-        background-color: lighten($purple, 55.5%);
-    }
+  // Add shading to every other `.content-set`
+  &:nth-of-type(even) {
+    background-color: lighten($purple, 55.5%);
+  }
 
-    // Add spacing beneath sections in `.content-set`
-    > section, .container > section {
-        &:not(:last-child) {
-            margin-bottom: 2.5em;
-            @include w1000 {
-                margin-bottom: 4em;
-            }
-        }
+  // Add spacing beneath sections in `.content-set`
+  > section, .container > section {
+    &:not(:last-child) {
+      margin-bottom: 2.5em;
+      @include w1000 {
+        margin-bottom: 4em;
+      }
     }
+  }
 }

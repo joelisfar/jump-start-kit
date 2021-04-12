@@ -1,27 +1,27 @@
 .site-footer {
-    background-color: $gray-light;
-    padding: 2.5em 0;
-    .row {
-        @include w700 {
-            display: flex;
-            justify-content: space-between;
-        }
-        .logo {
-            font-weight: $bold;
-            color: $purple;
-            &:hover {
-                color: $gray;
-            }
-        }
-        p {
-            a {
-                display: inline;
-                color: darken($gray, 10%);
-                font-weight: $medium;
-                &:hover {
-                    color: $purple;
-                }
-            }
-        }
+  background-color: $gray-light;
+  padding: 2.5em 0;
+  .row {
+    @include w700 {
+      display: flex;
+      justify-content: space-between;
     }
+    .logo {
+      font-weight: $bold;
+      color: $purple;
+      &:hover {
+        color: $gray;
+      }
+    }
+    p {
+      a {
+        display: inline;
+        color: darken($gray, 10%);
+        font-weight: $medium;
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+  }
 }

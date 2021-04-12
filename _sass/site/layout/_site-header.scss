@@ -1,39 +1,39 @@
 .site-header {
-    background-color: $gray-light;
-    padding: 2em 0;
-    .row {
-        @include w700 {
-            display: flex;
-            justify-content: space-between;
-        }
-        align-items: center;
-        .logo {
-            font-size: 1.5em;
-            font-weight: $bold;
-            color: $purple;
-            &:hover {
-                color: $gray;
-            }
-        }
-        nav {
-            ul {
-                display: flex;
-                li {
-                    &:not(:last-child) {
-                        margin-right: 1.5em;
-                        @include w480 {
-                            margin-right: 2em;
-                        }
-                    }
-                    a {
-                        font-weight: $medium;
-                        color: darken($gray, 10%);
-                        &:hover {
-                            color: $purple;
-                        }
-                    }
-                }
-            }
-        }
+  background-color: $gray-light;
+  padding: 2em 0;
+  .row {
+    @include w700 {
+      display: flex;
+      justify-content: space-between;
     }
+    align-items: center;
+    .logo {
+      font-size: 1.5em;
+      font-weight: $bold;
+      color: $purple;
+      &:hover {
+        color: $gray;
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        li {
+          &:not(:last-child) {
+            margin-right: 1.5em;
+            @include w480 {
+              margin-right: 2em;
+            }
+          }
+          a {
+            font-weight: $medium;
+            color: darken($gray, 10%);
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+    }
+  }
 }
