@@ -11,7 +11,7 @@
 	}
 
 	// Sizing
-	p, ul, ol, {
+	p, ul, ol {
 		@include w700 {
 			font-size: em(17);
 		}

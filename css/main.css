@@ -250,6 +250,8 @@ select, input, textarea {
   color: currentColor; }
   select::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: rgba(100, 115, 130, 0.75); }
+  select::-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder {
+    color: rgba(100, 115, 130, 0.75); }
   select:-ms-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: rgba(100, 115, 130, 0.75); }
   select::-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder {
