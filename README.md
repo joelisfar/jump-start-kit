@@ -13,4 +13,3 @@ Make sure you have *Node* installed
 
 * Run `npm install` from the root of this project
 * Run `gulp` to start Browersync and auto reloading and compilation
-
