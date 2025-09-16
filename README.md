@@ -14,7 +14,3 @@ Make sure you have *Node* installed
 * Run `npm install` from the root of this project
 * Run `gulp` to start Browersync and auto reloading and compilation
 
-A [Codekit](https://codekitapp.com) config is also included
-
-# Browser Support
-This kit should support all browsers that have [flex](https://caniuse.com/#search=flex) support. Gulp is set to support last 5 browser versions and >1% of browsers, so feel free to adjust this as needed.
